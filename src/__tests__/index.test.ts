@@ -29,3 +29,10 @@ test('Truncate Text', () => {
 test('Truncate Text', () => {
   expect(truncateText('This', 2)).toBe('Th...');
 });
+
+/**
+ * Check if text length is less than character length passed in
+ */
+test('Truncate Text', () => {
+  expect(truncateText('This', 10)).toBe('This');
+});

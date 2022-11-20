@@ -13,7 +13,7 @@ export const truncateText: textTruncatorType = (value, length) => {
     /**
      * If length is equal to the length of the string passed in then return the exact string
      */
-    if (length <= value.length) return value;
+    if (length >= value.length) return value;
 
     /**
      * If it is not equal, then truncate the returned text and return it
